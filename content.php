@@ -1,14 +1,13 @@
 <?php
 // mencegah direct access file PHP agar file PHP tidak bisa diakses secara langsung dari browser dan hanya dapat dijalankan ketika di include oleh file lain
 // jika file diakses secara langsung
-if (basename($_SERVER['PHP_SELF']) === basename(__FILE__)) {
+//if (basename($_SERVER['PHP_SELF']) === basename(__FILE__)) {
   // alihkan ke halaman error 404
-  header('');
-}
+  //header('');}//
 // jika file di include oleh file lain, tampilkan isi file
-else {
+//else {
   // panggil file "database.php" untuk koneksi ke database
-  require_once "config/database.php";
+  //require_once "config/database.php";//
 
   // pemanggilan file halaman konten sesuai "module" yang dipilih
   // jika module yang dipilih "dashboard"
